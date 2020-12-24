@@ -1,0 +1,129 @@
+$primary-color: #BC0200;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sniglet', cursive;
+}
+
+#content {
+    width: 100vw;
+    
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    justify-items: start;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    h1 {
+        grid-column: span 2;
+        font-size: 4.5rem;
+        justify-self: center;
+        padding: 40px 20px;
+        color: $primary-color;
+        text-shadow: 2px 2px 5px wheat;
+    }
+    #back {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 2rem;
+        a {
+            text-decoration: none;
+            color:$primary-color;
+            font-size: 4rem;
+            i {
+                color: $primary-color;
+                font-size: 2rem;
+            }
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+#area {
+    display: grid;
+    width: 80%;
+    padding: 20px 0 0 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    .piece {
+        border: 2px solid $primary-color;
+        height: 132px;
+        width:220px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#pieces {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 240px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+
+#opening-message {
+    display: none;
+    h2 {
+        font-size: 4rem;
+        padding: 50px;
+    }
+    img {
+        width: 600px;
+        height: auto;
+        margin-top: 50px;
+        border-radius: 8px;
+    }
+} 
+.hide {
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(black, .9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        border-radius: 10px;
+        color: wheat;
+        border: 3px solid wheat;
+        box-shadow: 0 0 15px wheat;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 50px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 4px solid wheat;
+        background-color: rgba(black, 0);
+        box-shadow: 0 0 5px wheat;
+        font-size: 1.5rem;
+        color: wheat;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    p {
+        padding: 0 50px;
+        font-size: 2rem;
+    }
+    h2, p, button {
+        text-shadow: 0 0 8px black;
+    }
+}

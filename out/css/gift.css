@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  font-family: "Sniglet", cursive;
+}
+
+body {
+  background-image: url("/src/img/stars-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: wheat;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  justify-items: center;
+  align-items: center;
+}
+
+#info {
+  text-align: center;
+}
+#info #back {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+#info #back a {
+  text-decoration: none;
+  color: #BC0200;
+  font-size: 4rem;
+}
+#info #back a i {
+  color: #BC0200;
+  font-size: 2rem;
+}
+#info #back a span {
+  font-size: 2rem;
+}
+#info h1 {
+  font-size: 4rem;
+  padding: 2rem 0 0.5rem 0;
+  color: #BC0200;
+  text-shadow: 2px 2px 5px wheat;
+}
+#info #sum {
+  max-width: 70vw;
+  font-size: 1.8rem;
+  padding: 30px;
+  line-height: 3rem;
+}
+#info #attempts {
+  font-size: 2rem;
+}
+#info #attempts span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #BC0200;
+}
+
+#gifts {
+  display: flex;
+  justify-content: space-evenly;
+}
+#gifts img {
+  max-width: 25%;
+  padding: 50px;
+  cursor: pointer;
+}
+#gifts img:hover {
+  transform: scale(1.05);
+}
+
+#opening-message-1 {
+  display: none;
+}
+#opening-message-1 h2 {
+  font-size: 4.5rem;
+  padding: 100px 40px;
+}
+
+#opening-message-2 {
+  display: none;
+}
+#opening-message-2 h2 {
+  font-size: 4rem;
+  padding: 80px;
+}
+#opening-message-2 #italy-btn {
+  display: block;
+  padding: 10px;
+  margin: 50px 0 20px 0;
+  cursor: pointer;
+}
+#opening-message-2 .gift-btn {
+  display: none;
+  padding: 10px;
+  margin: 50px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#opening-message-2 .gift-btn:hover {
+  transform: scale(1.05);
+}
+#opening-message-2 img {
+  width: 400px;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+#opening-message-3 {
+  display: none;
+}
+#opening-message-3 h2 {
+  font-size: 4rem;
+  padding: 100px;
+}
+#opening-message-3 img {
+  width: 700px;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+#opening-message-4 {
+  display: none;
+}
+#opening-message-4 h2 {
+  font-size: 4rem;
+  padding: 100px;
+}
+#opening-message-4 img {
+  width: 300px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.hide {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #BC0200;
+  border-radius: 10px;
+  color: wheat;
+  border: 3px solid wheat;
+  box-shadow: 0 0 15px wheat;
+}
+.hide button {
+  padding: 10px 20px;
+  margin: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 4px solid wheat;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px wheat;
+  color: wheat;
+}
+.hide button:hover {
+  transform: scale(1.05);
+}
+.hide p {
+  padding: 0 50px;
+  font-size: 2rem;
+}
+.hide h2, .hide p, .hide button {
+  text-shadow: 0 0 8px black;
+}
+
+#italy-pres {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: url("/src/img/stars-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #BC0200;
+}
+#italy-pres h1 {
+  font-size: 5rem;
+  padding-bottom: 4rem;
+}
+#italy-pres .album {
+  width: 60vw;
+  height: 60vh;
+  border: 1px solid wheat;
+  border-radius: 8px;
+  box-shadow: 0 0 8px wheat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #BC0200;
+  box-shadow: 0 0 15px wheat;
+  cursor: pointer;
+}
+#italy-pres .album:hover {
+  transform: scale(1.03);
+}
+#italy-pres .album img {
+  max-height: 100%;
+  max-width: 100%;
+  filter: blur(3px) sepia(50%);
+  opacity: 0.5;
+}
+#italy-pres .album h2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 5rem;
+  color: wheat;
+  text-shadow: 0 0 25px #BC0200;
+}
+#italy-pres #back-italy {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+#italy-pres #back-italy i {
+  color: #BC0200;
+  font-size: 2rem;
+}
+#italy-pres #back-italy span {
+  font-size: 2rem;
+}
+
+.display {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(188, 2, 0, 0.8);
+}
+.display #img {
+  width: 90%;
+  height: 95%;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 8px black;
+}
+.display #img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.display .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+}
+.display i {
+  font-size: 3rem;
+  color: black;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+#bonus {
+  display: none;
+  grid-template-rows: 2fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: wheat;
+  color: black;
+}
+#bonus h1 {
+  font-size: 6rem;
+  margin: 40px;
+  padding: 10px 50px;
+  animation: size 1s infinite, color 1s infinite;
+  border: 20px solid black;
+  border-radius: 20px;
+}
+#bonus h2 {
+  font-size: 4rem;
+}
+#bonus button {
+  padding: 10px 20px;
+  margin: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 4px solid black;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px wheat;
+}
+#bonus button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes size {
+  0% {
+    font-size: 6rem;
+    border-color: black;
+  }
+  50% {
+    font-size: 11rem;
+    border-color: #BC0200;
+  }
+  100% {
+    font-size: 6rem;
+    border-color: black;
+  }
+}
+@keyframes color {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #BC0200;
+  }
+  100% {
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=gift.css.map */

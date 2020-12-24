@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sniglet", cursive;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  justify-items: start;
+  align-items: flex-start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr;
+}
+#content h1 {
+  grid-column: span 2;
+  font-size: 4.5rem;
+  justify-self: center;
+  padding: 40px 20px;
+  color: #BC0200;
+  text-shadow: 2px 2px 5px wheat;
+}
+#content #back {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 2rem;
+}
+#content #back a {
+  text-decoration: none;
+  color: #BC0200;
+  font-size: 4rem;
+}
+#content #back a i {
+  color: #BC0200;
+  font-size: 2rem;
+}
+#content #back a span {
+  font-size: 2rem;
+}
+
+#area {
+  display: grid;
+  width: 80%;
+  padding: 20px 0 0 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#area .piece {
+  border: 2px solid #BC0200;
+  height: 132px;
+  width: 220px;
+}
+#area .piece img {
+  width: 100%;
+  height: 100%;
+}
+
+#pieces {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+#pieces img {
+  width: 240px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#opening-message {
+  display: none;
+}
+#opening-message h2 {
+  font-size: 4rem;
+  padding: 50px;
+}
+#opening-message img {
+  width: 600px;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.hide {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #BC0200;
+  border-radius: 10px;
+  color: wheat;
+  border: 3px solid wheat;
+  box-shadow: 0 0 15px wheat;
+}
+.hide button {
+  padding: 10px 20px;
+  margin: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 4px solid wheat;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px wheat;
+  font-size: 1.5rem;
+  color: wheat;
+}
+.hide button:hover {
+  transform: scale(1.05);
+}
+.hide p {
+  padding: 0 50px;
+  font-size: 2rem;
+}
+.hide h2, .hide p, .hide button {
+  text-shadow: 0 0 8px black;
+}
+
+/*# sourceMappingURL=puzzle.css.map */

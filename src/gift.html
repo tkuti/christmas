@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/out/css/gift.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Rancho&family=Sniglet&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad67dcd5a1.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="info">
+        <div id="back"><a href="index.html"><i class="fas fa-arrow-circle-left"></i><span> Vissza</span></a></div>
+        <h1>Meglepetés dobozok</h1>
+        <p id="sum">A dobozok meglepetéseket rejthetnek magukban! Minden körben egy dobozt nyithatsz ki, összesen 3 alkalommal próbálkozhatsz! Sok szerencsét! :)</p>
+        <p id="attempts">Még <span id="attempt-span">3</span> próbálkozásod van hátra!</p>
+    </div>
+    <div id="gifts">
+        <img src="./img/present_closed.png" alt="">
+        <img src="./img/present_closed.png" alt="">
+        <img src="./img/present_closed.png" alt="">
+    </div>
+    <div id="opening-message-1" class="hide">
+        <div>
+            <h2>Sajnos most nem nyertél!</h2>
+            <img src="img/jokey.png" alt="">
+            <button class="gift-btn">Próbálkozom újra</button>
+        </div>
+    </div>
+    <div id="opening-message-2" class="hide">
+        <div>
+            <h2>Gratulálunk!</h2>
+            <p>Nyereményed egy olaszországi bestof  bemutató!</p>
+            <img src="img/albumItaly/7a16474d-d0ca-463e-a41e-4668edacaf7a.jpg" alt="">
+            <button id="italy-btn">Megnézem</button>
+            <button class="gift-btn" id="message-2-btn">Próbálkozom újra</button>
+        </div>
+    </div>
+    <div id="opening-message-3" class="hide">
+        <div>
+            <h2>Gratulálunk!</h2>
+            <p>Nyereményed egy fantasztikus karácsonyi Budapest Bár online koncert!</p>
+            <img src="img/BB2.jpg" alt="">
+            <button class="gift-btn">Vissza</button>
+        </div>
+    </div>
+    <div id="opening-message-4" class="hide">
+        <div>
+            <h2>Sajnos elfogytak az ajándékok!</h2>
+            <img src="img/cry.png" alt="">
+            <button class="gift-btn">Vissza</button>
+        </div>
+    </div>
+    <div id="italy-pres">
+        <h1>Hanna Olaszországban</h1>
+        <div class="album" id="album">
+            <img src="img/albumItaly/7a16474d-d0ca-463e-a41e-4668edacaf7a.jpg"  alt="" id="album">
+            <h2 id="album1">Indítás</h2>
+        </div>
+        <div id="back-italy"><i class="fas fa-arrow-circle-left" ><span> Vissza</span></i></div>
+    </div>
+    <div class="display">
+        <div id="close"><i class="fas fa-window-close close"></i></div>
+        <i class="fas fa-arrow-left" id="prev"></i>
+        <div id="img"></div>
+        <i class="fas fa-arrow-right" id="next"></i>
+    </div>
+    <div id="bonus">
+
+            <h1>BÓNUSZ!!!!</h1>
+            <h2>Oldj meg egy feladatot, és nyerj bónusz ajándékot!</h2>
+            <a href="puzzle.html">
+                <button id="bonus-btn">Már megyek is!</button>
+            </a>
+
+    </div>
+
+    <script src="js/gift.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #BC0200;
+  font-family: "Sniglet", cursive;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/src/img/stars-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+.container #back {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 2rem;
+}
+.container #back a {
+  text-decoration: none;
+}
+.container h1 {
+  grid-column: span 2;
+  font-size: 5rem;
+  text-shadow: 2px 2px 5px wheat;
+}
+.container .album {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 40vw;
+  height: 40vh;
+  border: 3px solid #BC0200;
+  border-radius: 8px;
+  box-shadow: 0 0 15px wheat;
+  position: relative;
+  cursor: pointer;
+}
+.container .album:hover {
+  transform: scale(1.03);
+}
+.container .album img {
+  max-height: 100%;
+  max-width: 100%;
+  filter: blur(3px) sepia(50%);
+  opacity: 0.5;
+}
+.container .album h2 {
+  position: absolute;
+  top: 40%;
+  font-size: 4.5rem;
+  text-align: center;
+  color: wheat;
+  text-shadow: 0 0 25px #BC0200;
+}
+
+.display {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(188, 2, 0, 0.8);
+}
+.display #img {
+  width: 90%;
+  height: 95%;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 8px black;
+}
+.display #img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.display .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+}
+.display i {
+  font-size: 3rem;
+  color: black;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=galery.css.map */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/out/css/puzzle.css">
+    <script src="https://kit.fontawesome.com/ad67dcd5a1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Rancho&family=Sniglet&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <div id="back"><a href="index.html"><i class="fas fa-arrow-circle-left"></i><span> Főoldal</span></a></div>
+        <h1>Rakd ki a képet!</h1>
+        <div id="area"></div>
+        <div id="pieces" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+    </div>
+    <div id="opening-message" class="hide">
+        <div>
+            <h2>Gratulálunk!</h2>
+            <p>Nyereményed egy fantasztikus szilveszteri Budapest Bár online koncert!</p>
+            <img src="img/BB.jpg" alt="">
+            <button class="gift-btn">Vissza</button>
+        </div>
+    </div>
+
+    <script src="js/puzzle.js"></script>
+</body>
+</html>

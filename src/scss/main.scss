@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+   font-family: 'Sniglet', cursive;
+}
+  
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url("/src/img/stars-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+#greeting-div {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color:rgba(black, .5);
+    h1, h2 {
+        font-size: 5.5rem;
+        color: wheat;
+        font-family: 'Indie Flower', cursive;
+        text-shadow: 0 0 5px black, 0 0 8px wheat;
+    }
+    .img {
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 30%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
+  
+.picture-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+    overflow: hidden;
+    max-width: 550px;
+    height: auto;
+    border-radius: 15px;
+    border: 15px solid rgba(#BC0200, .3);
+    }
+}
+
+#menu-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    button {
+        width: 500px;
+        height: 150px;
+        font-size: 70px;
+        cursor: pointer;
+        background-color: rgba(wheat, .3);
+        color: wheat;
+        border: 10px solid rgba(wheat, .7);
+        border-radius: 10px;
+        &:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 48px;
+        }
+    }
+}
