@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("/src/img/stars-background.jpg");
+  background-image: url("../../src/img/stars-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: wheat;
@@ -186,7 +186,7 @@ body {
   height: 100vh;
   position: absolute;
   top: 0;
-  background: url("/src/img/stars-background.jpg");
+  background: url("../../src/img/stars-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
